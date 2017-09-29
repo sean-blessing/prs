@@ -1,0 +1,30 @@
+/* default styles */
+body {
+	font: normal normal normal 18pt/24pt Tahoma,Arial,sans-serif;
+	border: 0; margin: 0; padding: 0;
+}
+/* Menu styles */
+nav {
+	width: 100%;
+	background-color: #454545;
+	padding: 12px 0px;
+}
+nav ul {
+	padding: 0; 
+	margin: 0;
+}
+nav ul li {
+	display: inline;
+	text-align: center;
+}
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+}
+nav ul li a:hover {
+	background-color: black;
+}
+table, th, td {
+    border: 1px solid black;
+}

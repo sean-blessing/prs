@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>PRS New User Registration</title>
+<link href="css/main.css" rel="stylesheet" />
+</head>
+<body>
+<h1>Welcome to the Purchase Request App New User Registration Page!</h1>
+<h2>New User Registration</h2>
+	<form name="register" method="GET" action="register">
+		<input type="hidden" name="action" value="register">
+		UserName:  <input type="text" name="username" required><br><br>
+		PWD:  <input type="password" name="password" required><br><br>
+		First Name:  <input type="text" name="firstName" required><br><br>
+		Last Name:  <input type="text" name="lastName" required><br><br>
+		Phone #:  <input type="text" name="phone"><br><br>
+		Email Address:  <input type="email" name="email" required><br><br>
+		Reviewer?:  <input type="checkbox" name="reviewer"><br><br>
+		Admin?:  <input type="checkbox" name="admin"><br><br>
+		<button type="submit">Submit</button> <button type="reset">Reset</button>
+     </form>
+</body>
+</html>
