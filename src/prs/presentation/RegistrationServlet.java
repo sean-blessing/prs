@@ -11,6 +11,7 @@ import prs.business.User;
 import prs.db.DAOFactory;
 import prs.db.user.UserDAO;
 
+
 /**
  * Servlet implementation class RegistrationServlet
  */
@@ -29,8 +30,9 @@ public class RegistrationServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("RegistrationServlet doGet");
 		String url = "/index.html";
-		String action = request.getParameter("action");
+		String action = request.getParameter("action");   // retrieved from hidden 'action' field in form
 		String username = request.getParameter("username");
 		String pwd = request.getParameter("password");
 		UserDAO uDAO = DAOFactory.getUserDAO();
@@ -78,6 +80,7 @@ public class RegistrationServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		System.out.println("RegistrationServlet doPost");
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}

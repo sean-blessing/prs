@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import prs.util.StringUtil;
 
-public class Product implements Serializable{
+public class Product implements Serializable {
 	private int id;
 	private int vendorId;
 	private String partNumber;
